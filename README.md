@@ -4,9 +4,9 @@
 + **[ Day 1 - Overview of VLSI Design ](https://github.com/xinniteo/Intel_CKT_Training#day-1)**
   <details><summary> Theory </summary>
   
-  [Theory - Overview of VLSI Design](https://github.com/xinniteo/Intel_CKT_Training/blob/main/readme.md#theory---Overview-of-VLSI-Design)
+  [Theory - Overview of VLSI Design](https://github.com/xinniteo/Intel_CKT_Training/blob/main/README.md#theory---overview-of-vlsi-design)
  
-## Day 0
+## Day 1
 ## Theory - Overview of VLSI Design
 <details><summary> Chip-to-wafer </summary>
   
