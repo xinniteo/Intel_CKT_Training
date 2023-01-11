@@ -19,11 +19,11 @@
 + **[ Day 2 - IC Manufacturing Process ](https://github.com/xinniteo/Intel_CKT_Training#day-2)**
   <details><summary> Theory </summary>  
   
-  [Theory - Analog VLSI Design Flow & CMOS Fabrication Process](https://github.com/xinniteo/Intel_CKT_Training/blob/main/README.md#theory---analog-vlsi-design-flow-&-cmos-fabrication-process)
+  [Theory - Analog VLSI Design Flow & CMOS Fabrication Process](https://github.com/xinniteo/Intel_CKT_Training#theory---analog-vlsi-design-flow--cmos-fabrication-process)
   </details>
   <details><summary> Assignment </summary>  
 
-  [Assignment - Fabrication Process and Layout](https://drive.google.com/file/d/1vbWfWf-7M4tKgTVmRouwW9HEL88RB4ri/view?usp=drivesdk)
+  [Assignment - Fabrication Process and Layout](https://github.com/xinniteo/Intel_CKT_Training#assignment---fabrication-process-and-layout)
   </details>
  
  
