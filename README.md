@@ -6,7 +6,7 @@
   
   [Theory - Fundamental of VLSI Design & Overview of Sand-to-Silicon](https://github.com/xinniteo/Intel_CKT_Training/blob/main/README.md#theory---fundamental-of-vlsi-design-&-overview-of-sand---to---silicon)
   </details>
-  <details><summary> Prerequisite Assignments (TBD by 15/1) </summary>  
+  <details><summary> Prerequisite Assignments (TBD) </summary>  
  
  <!---
   * RC-Circuit-Assignment (TBD)
@@ -26,6 +26,15 @@
   [Assignment - Fabrication Process and Layout](https://github.com/xinniteo/Intel_CKT_Training#assignment---fabrication-process-and-layout)
   </details>
  
+ + **[ Day 3 - CMOS Fabrication Process in DSM and UDSM Technology ](https://github.com/xinniteo/Intel_CKT_Training#day-3)**
+   <details><summary> Theory </summary>  
+  
+   [Theory - CMOS Fabrication Process in DeepSubmicron (DSM) and Ultra DeepSubmicron (UDSM) Technology](https://github.com/xinniteo/Intel_CKT_Training#theory---analog-vlsi-design-flow--cmos-fabrication-process)
+   </details>
+   <details><summary> Assignment </summary>  
+
+   
+   </details>
  
 ----------------------------------------------------------------
 ## Day 1
@@ -364,3 +373,200 @@
 
 [PDF - Fabrication Process and Layout Assignment](https://drive.google.com/file/d/1vbWfWf-7M4tKgTVmRouwW9HEL88RB4ri/view?usp=drivesdk)
 </details>
+
+----------------------------------------------------------------
+## Day 3
+## Theory - CMOS Fabrication Process in DeepSubmicron (DSM) and Ultra DeepSubmicron (UDSM) Technology
+<details><summary> CMOS Fabrication Process </summary>
+
+### **CMOS Fabrication Process**
+<details><summary> Disadvantage of the Submicron CMOS Process </summary> 
+  
+#### Disadvantage of the Submicron CMOS Process
+* transistor size decreases causing reverse bias pn junctions to isolate transistors becomes impractical
+  * due to p-well and n-well getting nearer  
+* ![image](https://user-images.githubusercontent.com/121996016/212166563-52e82ff0-d6d7-4a05-9dae-0e071364420b.png)
+
+</details>  
+
+<details><summary> Local Oxidation of Silicon (LOCOS) Isolation Process </summary> 
+  
+#### Local Oxidation of Silicon (LOCOS) Isolation Process
+* a traditional isolation technique used in submicron processes
+* Pros: simple process flow and high oxide quality as whole LOCOS structure is thermally grown
+* Cons: bird’s beak effect and surface area that lost to this encroachment
+1. Pad oxide which is a very thin layer silicon dioxide is grown on the wafer.A layer of silicon nitride is then deposited to use as an oxide barrier  
+![image](https://user-images.githubusercontent.com/121996016/212791271-c9ca3e06-d01a-4cd1-b634-5ddef373c1e4.png)
+2. Photolithography is done to pattern and etch the nitride and pad oxide where the thick oxide will be grown  
+![image](https://user-images.githubusercontent.com/121996016/212791450-408695d5-54e4-4113-9b6d-fa8176b0c502.png)
+3. A thick oxide is grown in the exposed area through y thermal oxidation process  
+![image](https://user-images.githubusercontent.com/121996016/212791493-d9176804-d28a-4774-8eee-91719805ae22.png)
+4. Last step is the removal of the silicon nitride layer  
+![image](https://user-images.githubusercontent.com/121996016/212791591-2cdaffa8-8bc8-41e2-9c4a-8592f9ca6d2f.png)
+  
+</details> 
+  
+<details><summary> Sallow Trench Isolation Technology </summary> 
+  
+#### Sallow Trench Isolation Technology
+* allows closer spacing of transistors by eliminating the depletion region at the surface and Bird’s beak effect due to LOCOS process  
+![image](https://user-images.githubusercontent.com/121996016/212791893-6d319513-6afe-4d3f-be3d-74a28427f56e.png)
+* isolation process for deep-submicron process because it completely avoids Bird’s beak shape characteristics
+* Pros: more suitable for the increased density in a small area because it allows forming smaller isolation regions
+* Cons: larger number of process steps
+1. Wafer is covered with pad oxide and silicon nitride  
+![image](https://user-images.githubusercontent.com/121996016/212792228-300ca197-91fe-4195-9afb-f75f1465b533.png)
+2. Nitride and pad oxide are etched. An anisotropic etch is then made in the silicon to a depth of 0.4 to 0.5 microns  
+![image](https://user-images.githubusercontent.com/121996016/212792288-afb0f410-b5e0-49b4-abf7-ab586e2d2759.png)
+3. A thin thermal oxide layer is grown on the trench walls  
+![image](https://user-images.githubusercontent.com/121996016/212792333-5a6e2d0d-0c5a-4f9b-82e2-4451e1a42b1c.png)
+4. The trench is then filled with a Chemiccal Vapour Deposition (CVD) dielectric film  
+![image](https://user-images.githubusercontent.com/121996016/212792402-689d9b42-1aca-44cb-9805-8fe5e7e19100.png)
+5. The dielectric layer is polished back until the nitride is reached through Chemical Mechanical Polishing (CMP) step  
+![image](https://user-images.githubusercontent.com/121996016/212792486-3ee50c1f-d855-4696-b9a8-0033ddfbbf4f.png)
+6. The dielectric material is densified at 900°C and the nitride and pad oxide are striped  
+![image](https://user-images.githubusercontent.com/121996016/212792536-23faf8ba-62ca-4b1a-9aa1-c5aed2715680.png)
+
+</details> 
+  
+<details><summary> Illustration of a Deep Submicron (DSM) CMOS Technology </summary> 
+  
+#### Illustration of a Deep Submicron (DSM) CMOS Technology
+![image](https://user-images.githubusercontent.com/121996016/212711297-14f63543-dfae-49f8-9ba8-eb56084baa12.png)
+* There is oxide layer between metal 
+* Between metal layer is connected with copper
+* We have no controll on the thickness of layer, only length and width
+  * from cross section of an IC, it can be seen that metal routings in lower layers have a smaller thickness
+  * Keeping them ‘thinner’ than the upper layers is essential to decrease parasitic capacitances because they are closer to the substrate. 
+  * Higher metal layer -> thickness increases -> larger cross section area -> smaller resistance  
+  ![image](https://i0.wp.com/www.electricalvolt.com/wp-content/uploads/2020/11/resistance-formula.jpg?resize=473%2C395&ssl=1)
+* Therefore, normally the top metal layer is the power routing
+  * to make sure that there is minimum voltage drop across them
+  * thicker higher metal layer is also affordable since it does not contribute too much parasitic capacitance, as it is at a greater height from the substrate
+* Middle metal layer is the signal routing, clock routing and etc.  
+  
+* To the NMOS and PMOS transistor, the DSM technology able to: 
+  * reduce substrate noise coupling through deep n-well
+  * make voltage controlled oscillators (VCOs) through a MOS varactor(capacitance varies based on voltage)
+  * With minimum 6 levels of metal that can form many useful structures such as inductors, capacitors, and transmission lines
+  * provide different resistors:  
+    • Diffused and/or implanted resistors  
+    • Well resistors  
+    • Poly resistors  
+    • Metal Resistors  
+    • ![image](https://user-images.githubusercontent.com/121996016/212729808-12fc8343-c488-48df-9e01-f4f143779ce5.png)
+
+* Different Types of Capacitor in Deep Submicron (DSM) CMOS Technology  
+![image](https://user-images.githubusercontent.com/121996016/212743945-7c8d367c-6af2-423d-98a4-7bb237cb5c38.png)
+  
+* Example of a DSM Technology Process (SKY130)
+![image](https://user-images.githubusercontent.com/121996016/212754265-01272cb0-f3eb-4760-b7af-e3f354ad87f2.png)
+  
+</details>
+
+<details><summary> Typical Deep Submicron (DSM) CMOS Fabrication Process </summary> 
+  
+#### Typical Deep Submicron (DSM) CMOS Fabrication Process  
+Starting Material
+* a highly doped substrate to act as a good conductor
+* ![image](https://user-images.githubusercontent.com/121996016/212783825-f57b1432-e1e8-4aa5-9e3c-792ecdaee11b.png)
+
+Step 1: n and p-well Creation
+* p-well in NMOS and n-well in PMOS are fabricated through implantation followed by a deep diffusion  
+* ![image](https://user-images.githubusercontent.com/121996016/212786422-eb311685-58d0-45bd-8604-fc0cf904e4bb.png)
+  
+Step 2: Sallow Trench Isolation
+* to isolate one region/transistor from another
+* ![image](https://user-images.githubusercontent.com/121996016/212786600-b514b4c9-d01d-4a22-a16e-f0e77941b373.png)
+
+Step 3: Threshold Shift and Anti-Punch through Implants
+* natural thresholds of NMOS around 0V ; PMOS around -1.2V
+  * An p-implant is used to make :
+    * NMOS harder to invert
+    * PMOS easier resulting in threshold voltages balanced around zero volts
+* an implant can be applied to create a higher-doped region beneath the channels
+  * to prevent punch-through from drain depletion region extending to source depletion region
+* ![image](https://user-images.githubusercontent.com/121996016/212787101-b91b70e8-da8d-4aba-8d3c-0641b5bdcfa0.png)
+  
+Step 4: Threshold Shift and Anti-Punch through Implants
+* a thin oxide is deposited followed by polysilicon
+  * unwanted area are removed
+* ![image](https://user-images.githubusercontent.com/121996016/212787306-418db099-4361-4a01-9311-4408274505f8.png)
+  
+Step 5: Lightly Doped Source and Drain
+* a lightly-doped implant is used to create a lightly-doped source and drain next to the channel of the MOSFETs
+* ![image](https://user-images.githubusercontent.com/121996016/212787409-4f4f3d89-5641-4023-afc5-7facb010cfb9.png)
+  
+Step 6: Lightly Doped Source and Drain
+* a layer of dielectric is deposited on the surface and removed
+  * to leave “sidewall spacers” next to the thin-oxide-polysilicon-polycide sandwich
+    * sidewall spacers will prevent the part of source and drain next to the channel from becoming heavily doped
+* ![image](https://user-images.githubusercontent.com/121996016/212787723-f6efcd65-ccba-49f9-b184-5efdd3747dee.png)
+  
+Step 7: Implantation of Havily Doped Source and Drain
+* to provide the completed sources and drains
+* to allow ohmic contact into the wells and substrate
+* ![image](https://user-images.githubusercontent.com/121996016/212787953-931754d5-5e4c-4d37-9526-9d84b75f01d9.png)
+
+Step 8: Siliciding (Salicide and Polyside)
+* to reduces the resistance of the bulk diffusions and polysilicon
+* to form an ohmic contact with material on which it is deposited
+* ![image](https://user-images.githubusercontent.com/121996016/212788106-297a7f50-dce9-4919-b818-049cd18b8832.png)
+
+Step 9: Intermediate Oxide Layer
+* to cover the transistors
+* to planarize the surface
+* ![image](https://user-images.githubusercontent.com/121996016/212788276-47974670-6927-4492-a168-e44d7bdfd6e8.png)
+  
+Step 10: First Level Metal
+* Tungsten plugs are built through the lower intermediate oxide layer
+  * to provide contact between the devices, wells and substrate to the first-level metal
+* ![image](https://user-images.githubusercontent.com/121996016/212788516-eb69a961-35a0-4b57-81f4-3c47cad3d27a.png)
+  
+Step 11: Second Level Metal
+* previous step is repeated for the second-level metal
+* ![image](https://user-images.githubusercontent.com/121996016/212788670-53b25580-13d9-4ce1-ad8e-1afc646f92e9.png)
+  
+![image](https://user-images.githubusercontent.com/121996016/212788751-5ce275f1-dc69-47ad-a9cc-337d51cb4ebb.png)
+
+</details>
+
+<details><summary> Summary of Deep Submicron (DSM) CMOS Fabrication Process </summary> 
+  
+####  Summary of Deep Submicron (DSM) CMOS Fabrication Process
+DSM Technology 
+* typically has a minimum channel length between 0.35μm and 0.1μm
+* addresses the problem of excessive depletion region widths in junction isolation techniques by using shallow trench isolation
+* may have from 4 to 8 levels of metal
+* lightly doped drains and sources are one of the key aspects
+
+</details>
+  
+<details><summary> Ultra Deep Submicron (UDSM) CMOS Technology </summary> 
+  
+####  Ultra Deep Submicron (UDSM) CMOS Technology
+* Lmin ≤ 0.1 um
+* minimum feature size < 100 nm
+* Today’s state of the art:
+  * 22 nm drawn length
+  * 5 nm lateral diffusion (12 nm gate length)
+  * 1 nm transistor gate oxide
+  * 8 layers of copper interconnect
+* specialized processing is used to increase drive capability and maintain low off currents                
+* ![image](https://user-images.githubusercontent.com/121996016/212790473-bc7b1e79-885d-481c-be2d-882df2332a9f.png)
+                            
+</details>
+  
+  
+  
+  
+  
+     
+</details>   
+
+## Assignment - DSM and UDSM Fabrication Process
+<details><summary> DSM and UDSM Fabrication Process Assignment </summary>  
+
+ <!---[PDF - DSM and UDSM Fabrication Process Assignment]()-->
+</details>
+
